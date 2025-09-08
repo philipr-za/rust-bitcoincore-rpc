@@ -21,7 +21,7 @@ path = "src/lib.rs"
 
 [features]
 default = ["rand"]
-rand = ["bitcoin/rand-std"]
+rand = ["bitcoin/std", "bitcoin/rand"]
 
 [dependencies]
 serde = { version = "1", features = [ "derive" ] }
