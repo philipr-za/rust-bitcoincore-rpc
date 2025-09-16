@@ -23,7 +23,8 @@ default = ["rand"]
 rand = ["bitcoincore-rpc-json/rand"]
 
 [dependencies]
-bitcoincore-rpc-json = { version = "0.20.0", path = "../json" }
+#bitcoincore-rpc-json = { version = "0.20.0", path = "../json" }
+bitcoincore-rpc-json = { git = "https://github.com/philipr-za/rust-bitcoincore-rpc.git", branch = "use-bitcoin-with-musig" }
 
 log = "0.4.5"
 jsonrpc = { version = "0.18.0", features = ["minreq_http"] }
